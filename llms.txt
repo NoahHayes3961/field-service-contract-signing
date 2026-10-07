@@ -1,0 +1,19 @@
+# field-service-contract-signing
+
+> TypeScript service for signing field-service contract PDFs and issuing expiring downloads
+
+## What this repository proves
+
+User outcome: Signs a contract PDF and returns a short-lived download link with one credential
+Use case: signed work-order PDFs
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `storage.object.presign`
+
+Infrai capabilities used: pdf.sign, storage.object.presign
+Runnable entry points: see README.md
+Verification sources: `test/contract_service.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

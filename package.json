@@ -1,0 +1,12 @@
+{
+  "name": "field-service-contract-signing",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --experimental-strip-types test/contract_service.test.ts",
+    "run": "node --experimental-strip-types src/contract_service.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": { "zod": "^3.24.0" },
+  "devDependencies": { "@types/node": "^22.0.0", "typescript": "^5.7.0" }
+}
